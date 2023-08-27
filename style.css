@@ -1,0 +1,131 @@
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .calculator {
+      margin: 50px 0px 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-container {
+
+      gap: 0px;
+      display: grid;
+      width: 300px;
+      height: 400px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .span2 {
+      grid-column: span 2;
+    }
+
+    .span4 {
+      grid-column: span 4;
+    }
+
+    input {
+      border: 0px;
+      font-size: 24px !important;
+      font-weight: bold;
+      padding: 0px 10px;
+    }
+
+    #display1 {
+      font-size: 15px !important;
+    }
+
+    .in-top {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .grid-container>button {
+
+      background-color: #262154c5;
+      border: 2px solid rgb(255, 255, 255);
+      border-radius: 1px;
+      font-weight: bold;
+      color: #f4f7ff;
+
+    }
+
+
+    .b {
+      background-color: #5a809083 !important;
+    }
+
+    /*calculator animation*/
+    /*   .typewriter{
+
+            width: 10ch;
+            overflow: hidden;
+            animation: typing 5s steps(10)
+            infinite alternate-reverse;
+         }
+    
+          @keyframes typing{
+            from{width: 0ch;}
+            to{width: 10ch;}
+         } 
+    */
+
+    #floatingButton {
+      position: fixed;
+      bottom: 0px;
+      
+      right: 0px;
+      
+      border: none;
+      cursor: pointer;
+      margin: 30px;
+      padding: 10px 15px;
+      border-radius: 100px;
+    }
+
+    /* calculator text animation*/
+
+    .typing-animation {
+      text-align: center;
+
+    }
+
+    .typing-text {
+      margin: 10% 0px 0px 0px;
+      display: inline-block;
+      height: 30px;
+      font-size: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.3em solid #3e27e9 !important;
+      /* Adjust the color as needed */
+      width: 0px;
+      animation: typing 2s steps(12)infinite alternate-reverse, blink-caret 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 11ch;
+      }
+    }
+
+    @keyframes blink-caret {
+
+      from,
+      to {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: #000;
+        /* Adjust the color as needed */
+      }
+    }
